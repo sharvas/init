@@ -1,0 +1,28 @@
+pradzioje apie servisus:
+ssh
+service sshd status
+
+komandos:
+df
+top
+ps
+kill
+ifconfig
+ping
+netstat
+route / traceroute
+hosts
+networks
+host.conf
+resolve.conf
+interfaces
+
+reikia instaliuotis:
+apache2 // apt-get install apache2
+
+bind
+
+grep
+cut
+sed
+awk

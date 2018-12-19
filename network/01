@@ -1,0 +1,1 @@
+ifconfig | cut -f 1 | cut -f 1 -d : | sed '/^[[:space:]]*$/d'
