@@ -1,2 +1,2 @@
 ifconfig | grep broadcast | cut -f 6 -d ' '
-
+arp -a

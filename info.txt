@@ -56,3 +56,18 @@ vagrant reload
 cd /Volumes/Storage/goinfre/$USER/vagrant
 
 vagrant ssh
+
+to get the network setup - to find WIFI MAC address:
+networksetup -listallhardwareports
+
+
+To find the devices on the local network:
+If you don't know the computer's network name, there's another trick you can do using ping. Find your IP address and your subnet mask. Both should be visible in the Network preference pane of System Preferences. Line up your IP address and your subnet mask, and replace any 0 values in the subnet mask with 255 in the same relative position of the IP address. For example, if you have the following IP address and subnet mask, respectively:
+
+192.168.1.151
+
+255.255.255.0
+
+The 0 is in the last field of the subnet mask, so you replace the last field of the IP address with 255 and ping it: ping 192.168.1.255
+
+You should get a response with the IP address of any device on the network capable of responding to pings.
