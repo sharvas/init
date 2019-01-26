@@ -1,0 +1,24 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    16                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: aschukin <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/01/26 16:54:19 by aschukin          #+#    #+#              #
+#    Updated: 2019/01/26 17:04:52 by aschukin         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+crontab -e
+
+# As you can se, there are 5 stars. The stars represent different date parts
+# in the following order:
+
+# minute (from 0 to 59)
+# hour (from 0 to 23)
+# day of the month (from 1 to 31)
+# month (from 1 to 12)
+# day of the week (from 0 to 6 | 0 = Sunday)
+
+# * * * * * /bin/execute/this/script.sh

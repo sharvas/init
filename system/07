@@ -1,0 +1,4 @@
+/etc/init.d/ssh status | grep "Main PID"
+
+# PID is process ID
+# SSH is a Secure Shell Daemon application

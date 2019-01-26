@@ -1,0 +1,3 @@
+sudo hostname this-is-the-new-hostname
+
+# to check the hostname, run: $ hostname
