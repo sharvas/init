@@ -1,1 +1,1 @@
-nslookup slash16.org | grep "Address" | tail -n 4
+nslookup slash16.org | head -n 1

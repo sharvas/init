@@ -1,0 +1,13 @@
+# login to the system as a root user
+ssh root@server_ip_address
+
+# to change to a new user
+su - username
+
+# to check
+sudo whoami
+
+#or and type the pass
+ssh domainuser@example.com
+
+#in visual ???

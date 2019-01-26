@@ -1,2 +1,4 @@
+#Amazom AWS
+
 ARG=`host slash16.org | grep 'address' | cut -d ' ' -f 4 | head -n 1`;
 whois $ARG

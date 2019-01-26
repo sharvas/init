@@ -1,0 +1,3 @@
+sudo adduser new
+
+#new is the name of the user, can be anything

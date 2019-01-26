@@ -1,4 +1,4 @@
-traceroute slash16.org | grep ' 1 '
+traceroute slash16.org | grep 'nat'
 
-#The first IP address the address of the router that the computer is directly linked to.
-#The same as default gateway.
+#it's the NAT server, the one with the nat name.
+#Network address translation (NAT) is a method of remapping one IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device.

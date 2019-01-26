@@ -1,0 +1,8 @@
+userdel -Z -r -f username
+
+#-f : Delete Linux user account with force removal of files
+#-r : Remove Linux user account including home directory and mail spool
+#-Z : Remove any SELinux user mapping for the user when deleting user from Linux
+
+user=$(cat /etc/passwd | grep new) # new is th that we want to delete
+#....

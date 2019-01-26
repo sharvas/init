@@ -1,0 +1,5 @@
+#ps aux | grep tail to get PID of the process
+#sudo kill <PID>
+
+#or
+sudo pkill tail
