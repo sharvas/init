@@ -1,0 +1,4 @@
+in the /etc/hosts add a line:
+46.19.122.85	intra.42.fr
+
+#why in this order?

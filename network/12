@@ -1,0 +1,1 @@
+ifconfig | grep 'inet' | tail -n 2 | head -n 1 | cut -d ' ' -f 2

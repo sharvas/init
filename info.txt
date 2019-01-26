@@ -14,7 +14,7 @@ route / traceroute
 hosts
 networks
 host.conf
-resolve.conf
+resolv.conf
 interfaces
 
 reikia instaliuotis:

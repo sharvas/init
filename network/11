@@ -1,0 +1,4 @@
+traceroute slash16.org | grep ' 1 '
+
+#The first IP address the address of the router that the computer is directly linked to.
+#The same as default gateway.
