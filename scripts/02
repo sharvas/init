@@ -1,15 +1,13 @@
-userdel -Z -r -f username
-#or
-
-#another sequence
-passwd --lock username # to lock user account
-pgrep -u username # find all the running processes of the user
-killall -9 -u username # kill all those processes
-deluser --remove-home username # delete the user and all files
-
-#-f : Delete Linux user account with force removal of files
-#-r : Remove Linux user account including home directory and mail spool
-#-Z : Remove any SELinux user mapping for the user when deleting user from Linux
-
-#to check if the user exists:
-user=$(cat /etc/passwd | grep new) # new is th that we want to delete
+if [ $(id -u $1) -eq $(id: ‘$1’: no such user)];then
+	echo "no user: $1"
+else
+	echo "locking $1 account"
+	sudo passwd --lock $1
+	echo "finding $1 precesses"
+	sudo pgrep -u $1
+	echo "killing $1 processes"
+	sudo pkill -9 -u $1
+	echo "deleting user"
+	sudo deluser --remove-home $1
+	echo "user $1 deleted"
+fi
