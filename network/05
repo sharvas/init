@@ -1,1 +1,1 @@
-nslookup slash16.org | head -n 1
+nslookup slash16.org | grep Server | cut -d ':' -f 2 | tr -d '\t'
