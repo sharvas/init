@@ -8,6 +8,7 @@ su - username
 sudo whoami
 
 #or and type the pass
-ssh domainuser@example.com
+ssh <domainuser>@<hostname>
 
-#in visual ???
+#in graphic session:
+#login with new user and type the password

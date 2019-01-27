@@ -1,1 +1,3 @@
 /etc/resolv.conf
+#or
+#/private/var/run/resolv.conf

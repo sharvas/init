@@ -6,15 +6,15 @@
 #    By: aschukin <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/26 16:54:19 by aschukin          #+#    #+#              #
-#    Updated: 2019/01/26 20:33:00 by svaskeli         ###   ########.fr        #
+#    Updated: 2019/01/27 14:31:13 by svaskeli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-crontab -e
-#I think it's just cron
-#cron is the program and crontab is just the command
-#https://kvz.io/blog/2007/07/29/schedule-tasks-on-linux-using-crontab/
+cron
 
+# cron is the program and crontab is the command
+
+# crontab -e
 # As you can se, there are 5 stars. The stars represent different date parts
 # in the following order:
 
