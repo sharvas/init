@@ -1,1 +1,0 @@
-service commands after the hostname change does not work. need to change the name back to default to make it work again.

@@ -1,5 +1,5 @@
-#maybe:
-systemctl list-units --type service --all
+sudo service --status-all
 
+#for all: systemctl list-units --type service --all
 #thay are called daemon - programms that run in the background
 #As a rule, UNIX systems seem to be infested with both daemons and demons." According to Wikipedia: The term was coined by the programmers of MIT's Project MAC. They took the name from Maxwell's demon, an imaginary being from a thought experiment that constantly works in the background, sorting molecules
