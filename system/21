@@ -1,4 +1,3 @@
-who
+cut -d: -f1,3 /etc/passwd | egrep ':[0-9]{4}$' | cut -d: -f1
 
-#cut -d: -f1,3 /etc/passwd | egrep ':[0-9]{4}$' | cut -d: -f1
-#Human users have UIDs starting at 1000, so you can use that fact to filter out the non-human
+#Human users have UIDs starting at 1000 and ending at 6000, so you can use that fact to filter out the non-human
