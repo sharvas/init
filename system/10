@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    10                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: svaskeli <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/01/27 15:46:53 by svaskeli          #+#    #+#              #
+#    Updated: 2019/01/27 15:46:58 by svaskeli         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 # A partition table is a table maintained on disk by the operating system 
 # describing the partitions on that disk.
 

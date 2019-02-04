@@ -1,3 +1,14 @@
-cut -d: -f1,3 /etc/passwd | egrep ':[0-9]{4}$' | cut -d: -f1
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    21                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: svaskeli <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/01/27 15:48:35 by svaskeli          #+#    #+#              #
+#    Updated: 2019/01/27 15:48:38 by svaskeli         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
-#Human users have UIDs starting at 1000 and ending at 6000, so you can use that fact to filter out the non-human
+cut -d: -f1,3 /etc/passwd | egrep ':[0-9]{4}$' | cut -d: -f1
+#Human users have UIDs starting at 1000, so you can use that fact to filter out the non-human
