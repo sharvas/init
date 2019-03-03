@@ -12,16 +12,19 @@
 
 # to delete an active user
 
-if [ $(id -u $1) -eq $(id: ‘$1’: no such user)];then
-	echo "no user: $1"
+echo "input a username to delete"
+read name
+
+if [ $(id -u $name) -eq $(id: ‘$name’: no such user)];then
+	echo "no user: $name"
 else
-	echo "locking $1 account"
-	sudo passwd --lock $1
-	echo "finding $1 precesses"
-	sudo pgrep -u $1
-	echo "killing $1 processes"
-	sudo pkill -9 -u $1
+	echo "locking $name account"
+	sudo passwd --lock $name
+	echo "finding $name pr§:wqecesses"
+	sudo pgrep -u $name
+	echo "killing $name processes"
+	sudo pkill -9 -u $name
 	echo "deleting user"
-	sudo deluser --remove-home $1
-	echo "user $1 deleted"
+	sudo deluser --remove-home $name
+	echo "user $name deleted"
 fi
