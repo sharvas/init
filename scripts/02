@@ -6,7 +6,7 @@
 #    By: svaskeli <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/27 15:53:02 by svaskeli          #+#    #+#              #
-#    Updated: 2019/01/27 15:53:04 by svaskeli         ###   ########.fr        #
+#    Updated: 2019/03/03 17:00:08 by svaskeli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,16 +15,16 @@
 echo "input a username to delete"
 read name
 
-if [ $(id -u $name) -eq $(id: ‘$name’: no such user)];then
-	echo "no user: $name"
+if [ $(id -u $name) -gt 1000 ];then
+	echo "--> locking $name account"
+	passwd --lock $name
+	echo "--> finding $name processes"
+	pgrep -u $name
+	echo "--> killing $name processes"
+	pkill -9 -u $name
+	echo "--> deleting user"
+	deluser --remove-home $name
+	echo "--> user $name deleted"
 else
-	echo "locking $name account"
-	sudo passwd --lock $name
-	echo "finding $name pr§:wqecesses"
-	sudo pgrep -u $name
-	echo "killing $name processes"
-	sudo pkill -9 -u $name
-	echo "deleting user"
-	sudo deluser --remove-home $name
-	echo "user $name deleted"
+	echo "no real user: $name"
 fi
