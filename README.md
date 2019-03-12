@@ -1,6 +1,6 @@
-# sysadmin 101
+# SysAdmin 101 - intro to systems and network administration
 
-An introduction to systems, network administration and scripting. For details please check out the [subject](https://github.com/sharvas/init/raw/master/init.en.pdf).
+An introduction to systems and network administration plus scripting. For details please check out the [subject](https://github.com/sharvas/init/raw/master/init.en.pdf).
 
 The project consists of three parts:
 * network
@@ -26,6 +26,3 @@ else
 	echo "no real user: $name"
 fi
 ```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MDQ5OTA0NCw5NjY0NDE2OTJdfQ==
--->
