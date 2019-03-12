@@ -1,6 +1,6 @@
 # SysAdmin 101 - intro to systems and network administration
 
-An introduction to systems and network administration plus scripting. For details please check out the [subject](https://github.com/sharvas/init/raw/master/init.en.pdf).
+An introduction to systems and network administration plus scripting. For the details please check out the [subject](https://github.com/sharvas/init/raw/master/init.en.pdf).
 
 The project consists of three parts:
 * network - commands to find information about network configuration and modify it.
